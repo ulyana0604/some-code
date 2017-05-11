@@ -1,0 +1,62 @@
+.main {
+    width: 100%
+}
+
+
+ .second article {
+    width: 100%;
+}
+
+.first h2 {
+    left: 5px;
+}
+
+.first h5 {
+    top: 43px;
+    left: 5px;
+    
+}
+
+.first h1 {
+    left: -460px;
+}
+
+nav:last-child {
+    width: 90%;
+}
+
+nav:first-child div img {
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+
+nav figure {
+    width: 18%;
+    margin-left: 25px;
+}
+
+nav img {
+  margin-left: 0px;
+    
+}
+
+footer {
+    width: 95%;
+}
+
+nav figure h2, nav figure p {
+    font-size: 13.5px;
+}
+footer p {
+    width: 22.5%;
+    font-size: 11.5px;
+}
+
+footer input[type=button]{
+    width: 130px;
+    height: 40px;
+    font-size: 11px;
+    right: 5px;
+   
+}

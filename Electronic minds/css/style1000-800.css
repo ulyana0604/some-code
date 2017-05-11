@@ -1,0 +1,28 @@
+.main {
+    width: 100%;
+}
+
+.first h5 {
+    top: 43px;
+    left: 35px;
+    
+}
+
+
+nav:last-child {
+    width: 90%;
+}
+
+footer {
+    width: 90%;
+}
+
+footer p {
+    width: 24%;
+    font-size: 15px;
+}
+
+footer input[type=button]{
+    left: 10px;
+    width: 150px;
+}
