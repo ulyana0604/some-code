@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+	<!--[if IE 9]>
+ 		<link href="css/style.ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]>
+		<script type="text/javascript" src="js/html5shiv.min.js"></script>
+		<script type="text/javascript" src="js/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript"  src="js/respond.min.js"></script>
+		<link href="css/style.ie8.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	
+</head>
+<body ng-app="myApp">
+       <div id=”skm_LockPane” class=”LockOff”>
+        <header class="clearfix">
+           <div class="siteTitle"></div> 
+              <div class="mainHeader ">
+                  <aside class="authorsPhoto">Зоображення авторки</aside>
+                  <section class="logo">logo</section>
+                  <aside class="basket"><img src="img/icons8-Shopping%20Cart-64.png" alt=""></aside>
+              </div>
+              <nav>
+                  <ol>
+                      <li>Главная</li>
+                      <li>Портфолио</li>
+                      <li>Партнеры</li>
+                  </ol>
+              </nav>
+
+        </header>
+        <main ng-controller="myCtrl as my">
+          <section class="main">
+           <div class="slider">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            <div class="wrapper">
+                <div class="dress">
+                      <figure ng-repeat="dress in my.dress">
+                         <img src="{{dress.img}}" />
+                         <figcaption>{{dress.text}} </figcaption>
+                      </figure>
+                </div>
+            </div>
+            <div class="basketDiv">
+                <img src="img/icons8-Shopping%20Cart-64.png" alt="">
+           </div>
+           </section>
+           <section class="portfolio">
+            <div class="dress">
+                      <figure ng-repeat="dress in my.dress">
+                         <img src="{{dress.img}}" />
+                         <figcaption>{{dress.text}} </figcaption>
+                      </figure>
+                </div>
+        </section>
+        <section class="basketReq">
+            <h1>Корзина</h1>
+             <table class="table  table-striped table-bordered" id="table">
+                <thead>
+                    <tr>
+                        <th>Ipsum</th>
+                        <th>country</th>
+                        <th>Tcompany</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Lorem ipsum.</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Dolor</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form class="form-horizontal">
+  <div class="form-group">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" placeholder="Write text...">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" placeholder="Write text...">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" placeholder="Write text...">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" placeholder="Write text...">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" placeholder="Write text...">
+    </div>
+  </div>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+ </label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-1">
+      <button type="submit" class="btn btn-default" id="checkout">Оформить</button>
+    </div>
+  </div>
+</form>
+        </section>
+        <section class="aboutDress">
+            <section>
+                <img src="img/20160422171341_97889.jpg" alt="">
+            </section>
+            <section> 
+                <h2>Назва товару</h2><br><br>
+                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae enim omnis mollitia reiciendis dicta ullam, et laborum voluptate nihil totam, non aliquam dolore hic. Quae sequi aliquam repudiandae aspernatur quasi.</article><br>
+                <h2>1 000 грн</h2><br><br>
+                <a href="#" class="button7" id="add">Добавити в корзину</a>
+            </section>
+        </section>
+       
+        </main>
+        
+        <footer>
+             I am a Footer :)
+        </footer>
+         <div class="LockOn" id="lock_on"></div>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="libs/slick-1.6.0/slick/slick.min.js"></script>
+</body>
+</html>

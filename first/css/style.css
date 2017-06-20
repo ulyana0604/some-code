@@ -1,0 +1,264 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+*{
+    
+}
+
+header {
+    width: 100%;
+    height: 190px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+
+.siteTitle {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.authorsPhoto,
+.basket {
+    width: 12%;
+    height: 130px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.basket {
+    padding-top: 15px;
+}
+
+.logo {
+    width: 76%;
+    background: lightgreen;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+header nav ol {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 1.5em;
+    padding-top: 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 730px;
+    padding-top: 15px;
+    padding-top: 10px;
+}
+
+.wrapper {
+    width: 95%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid black;
+    border-bottom: none;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.slider {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    
+}
+
+.slider div {
+    height: 120px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.dress {
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    overflow-y: scroll !important;
+  
+}
+
+.dress figure {
+    width:  25%;
+    height: 220px;
+    display: inline-block;
+    float: left;
+    padding-left: 5%;
+    
+}
+
+.dress figure figcaption {
+    text-align: center;
+    font-size: 1em;
+}
+
+.dress figure img {
+    height: 170px;
+    width: 90%;
+}
+
+.basketDiv {
+    width: 150px;
+    height: 150px;
+    float: right;
+    position: relative;
+    right: 110px;
+}
+
+.basketDiv img {
+    width: 120px;
+    height: 120px;
+}
+
+.main {
+    display: block;
+}
+
+.portfolio {
+    width: 100%;
+    display: none;
+}
+
+.portfolio>.dress {
+    width: 100%;
+    height: 600px;
+}
+
+.basketReq,
+.aboutDress {
+    width: 60%;
+    height: 600px;
+    position: relative;
+    top: -650px;
+    margin: auto;
+    background: white !important;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 15px;
+    display: none;
+    visibility: visible; 
+    z-index:1000; 
+}
+
+.aboutDress {
+    width: 550px;
+    height: 400px;
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    display: none;
+}
+
+.aboutDress section {
+    width: 50%;
+    float: left;
+    height: 400px;
+}
+.aboutDress img {
+    width: 92%;
+    height: 80%;
+    padding-top: 40px;
+}
+
+a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button7:hover { 
+    background: rgb(53, 167, 110); 
+    text-decoration: none;
+    color: white;
+}
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+  text-decoration: none;
+    color: white;
+    
+}
+
+.LockOff{ 
+     display: none; 
+     visibility: hidden; 
+      } 
+ .LockOn{ 
+         display: none; 
+         visibility: visible; 
+         position: absolute; 
+         z-index: 999; 
+         top: 0px; 
+         left: 0px; 
+         width: 105%; 
+         height: 150%; 
+         background-color:darkgrey;  
+         padding-top: 20%; 
+         filter: alpha(opacity=80); 
+         opacity: 0.8; 
+    }
+
+.basketReq h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.basketReq .btn {
+   position: relative;
+    left: 100px;
+}
+
+footer {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5em;
+	padding-top: 40px;
+}
